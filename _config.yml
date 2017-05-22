@@ -4,14 +4,14 @@ description: "A blog about lorem ipsum ..."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
+username: Xdmegumi
+user_title: Xdmegumi - My page
+email: ahjxszg@gmail.com
+twitter_username: xdmegumi
+github_username:  Xdmegumi
 gplus_username:  loremipsum
 disqus_username: loremipsum
-profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+profile_picture: https://imgsa.baidu.com/forum/pic/item/9bb3820a304e251f1937e2f7ad86c9177e3e5300.jpg
 
 # Build settings
 markdown: kramdown
