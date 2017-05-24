@@ -1,47 +1,25 @@
 # Site settings
-title: Xdmegumi，The Moe Web Green Hand
-description: "A blog about lorem ipsum ..."
-baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
-# User settings
-username: Xdmegumi
-user_title: Xdmegumi - My page
-email: ahjxszg@gmail.com
-twitter_username: xdmegumi
-github_username:  Xdmegumi
-gplus_username:  高晨宇
-disqus_username: loremipsum
-profile_picture: https://imgsa.baidu.com/forum/pic/item/9bb3820a304e251f1937e2f7ad86c9177e3e5300.jpg
+title: Clean Blog
+header-img: img/home-bg.jpg
+email: your-email@yourdomain.com
+copyright_name: Your/Project/Corporate Name
+description: "Write your site description here. It will be used as your sites meta description as well!"
+baseurl: "/startbootstrap-clean-blog-jekyll"
+url: "http://yourdomain.com"
+twitter_username: SBootstrap
+github_username:  davidtmiller
+facebook_username:  StartBootstrap
+email_username:  your-email@yourdomain.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
-
-# Links to include in menu navigation
-links:
-  - title: home
-    url: /
-  - title: my posts
-    url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: about me
-    url: /about
-# projects in header index
-projects:
-  - name: 数模校赛模板
-    url: https://github.com/Xdmegumi/Git
-   
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+gems: [jekyll-paginate, jekyll-feed]
