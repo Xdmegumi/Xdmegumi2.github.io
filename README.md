@@ -1,294 +1,132 @@
-# HMFAYSAL OMEGA THEME
+# Gaya Jekyll Theme
 
-Project name:	HMFAYSAL OMEGA THEME  
-Author:	Hossain Mohd Faysal  
-Project type:	The Coolest Theme for Jekyll 
-License:	MIT License 
-  
-HMFAYSAL OMEGA is a minimalist, beautiful, responsive theme for Jekyll designed for engineers as well as writers who want their content to take front and center. This theme elegantly wraps each page and post with featured images complementing the content. It was built -- by Engineer slash Mathematician [Hossain Mohd Faysal](http://alum.mit.edu/www/hmfaysal/).
+Modern responsive theme made for jekyll blogging platform. 
+Gaya is a simple theme build from ground up with the focus of performance. 
+The theme itself quickly adapts to the users device, so it looks great on 
+smartphones, tablets, desktops or even the large monitors.
 
-The theme features:
-
-* Twitter Bootstrap 3
-* Option to set featured image that wraps your post in header and footer
-* Custom Javascript to emphasize the first paragraph `p:first-child` of your post
-* Variable templates for articles, quotation, video, photo and status updates (post types)
-* Display Equations via Native MathJax Support
-* Plugin-free/Github Pages Deployment Ready
-* Read time Calculator: Calculation of post read-time based on word count (Via Liquid Tags instead of a plugin)
-* Complex pagination script if you decide to turn pagination on
-* CSS3 transitions for better performance 
-* Ability to turn of animations in _config.yml
-* Readable typography to make your words shine
-* Disqus comments if you choose to enable
-* Simple and clear permalink structure
-* Footer Menu
-* SVG graphics
-* Google Fonts
-* 361 Fontawesome icons
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience
-* Beautifully crafted [404 page](http://hmfaysal.github.io/hmfaysal-omega-theme/404.html)
-* Custom [categories](http://hmfaysal.github.io/hmfaysal-omega-theme/categories/) and [tags](http://hmfaysal.github.io/hmfaysal-omega-theme/tags/) pages for viewers pleasure
-* Stylesheets for Pygments and Coderay to make your code examples look snazzy
-* Simple search that overlays results based on post title
-* Sitemap for search engines
-* Designed by an Electrical Engineer
-
-For a full list of features, visit [this link](http://hmfaysal.github.io/hmfaysal-omega-theme/theme-setup/about-hmfaysal-omega/)
-
-![screenshot of HMFAYSAL OMEGA Theme](https://raw.github.com/hmfaysal/hmfaysal-omega-theme/gh-pages/images/hmfaysal-omega-preview.jpg)
-
-## Basic Setup for a new Jekyll site
-
-1. [Install Jekyll](http://jekyllrb.com) and read through [this installation instructions](http://hmfaysal.github.io/hmfaysal-omega-theme/theme-setup/installing-jekyll-on-windows/) if you haven't already.
-2. Fork the [HMFAYSAL OMEGA Theme](https://github.com/hmfaysal/hmfaysal-omega-theme/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-
-
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+- Ability to change theme color at any time with any color.
+- Easy customizable menu navigation.
+- SEO Friendly
+- Embed image, YouTube/Vimeo video or SoundCloud audio to your post.
 
 ---
 
-## Setup for an Existing Jekyll site
+![Theme preview](http://gayan.me/thumbnails/gaya-jekyll-theme-preview-590x300.png "Gaya jekyll theme")
 
-1. Clone the following folders: `_includes`, `_layouts`, `_pages`, `assets`, and `images`.
-2. Set the following default variables in your `_config.yml` file:
+### Need Help?
 
-``` yaml
-title:            Site Title
-description:      Site description for the metas.
-logo:             omikron.png
-disqus_shortname: shortname
-# Assign a default image for your site's header and footer
-default_bg:       default_bg.jpg
-search:           true
-share:            true
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime:         true
-# Turn on or off the fin animations in the header and footer
-triangleheader:	  true
-animated_fins:    true
-# Specify the fin color in RGB value
-fin_color:        "255,255,255"
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-# baseurl:           
+Please submit as an 
+[issue](https://github.com/web-create/harmony/issues/new), I am happy 
+to response back.
 
-# Gems used
-gems:
-  - jekyll-feed
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
+## How to install/run
 
-# Archives configuration
-# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    # year: '/:year/'
-    # month: '/:year/:month/'
-    # day: '/:year/:month/:day/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
+1. [Fork](https://github.com/gayanvirajith/gaya) this repository.
+2. Clone it: git clone https://github.com/YOUR-USERNAME/gaya.
+3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
+4. Change your directory into cloned repository. 
+5. Run `bundle install`
+6. Edit the _config.yml on root directory. Change `url` property to to 
+`http://127.0.0.1:4000` since you are going to run on localhost.
+7. Run the jekyll server by having: `bundle exec jekyll serve --baseurl ''` or `rake preview`   
 
-# Owner/author information
-author:
-  name:           Your Name
-  picture:        your-photo.jpg
-  email:          your@email.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Some Details about yourself
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:
-  linkedin:
-  instagram:
-  tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+Try to locate your browser at [http://localhost:4000](http://localhost:4000).
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
+Note: If you are a windows user please refer this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Categories
-    url: /categories
-  - title: Tags
-    url: /tags
 
-# Sitemap configuration
-# https://github.com/kinnetica/jekyll-plugins
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/index.html"
+## Theme options and configurations
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-markdown:    kramdown
-highlighter: rouge
-paginate:    6
-paginate_path: "/blog/:num/"
+Following options can be seen within the file `_config.yml`. More information 
+about configuration can be found on the [Jekyll Documentationn][jekyll]
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title
-  pages:
-    output: true
-    permalink: /:title
+### General settings
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
+| Property name | Description  |
+------------ | -------------
+`title` | The title of your blog shown in the site header along with the logo.
+`tagline` | The site tagline also shown in the site header along with the title.
+`email` | The email address associated with blog/site.
+`description` | The site description used to show author's/site's description in the top of the sidebar.
+`baseurl` | The subpath of your site, e.g. /blog/. More information can be found in the [Jekyll Documentationn][jekyll].
+`url` | The base host name & protocol for your site. More information can be found in the [Jekyll Documentationn][jekyll].
+`logourl` | Path to main logo image.
+`author_thumbnail` | Path to author's thumbnail image. 
+`author` | Name of the author.
+`paginate` | Number of posts to show per page, More information can be found in the [Jekyll Documentationn][jekyll].
+
+### Social profile links
+
+| Property name | Description  |
+------------ | -------------
+`github` | GitHub link (Leave empty to exclude)
+`twitter` | Twitter link (Leave empty to exclude)
+`facebook` | Facebook link (Leave empty to exclude)
+`gplus` | Google plus link (Leave empty to exclude)
+`dribble` | Dribble link (Leave empty to exclude)
+`pinterest` | Pinterest link (Leave empty to exclude)
+
+### Theme settings
+
+| Property name | Description  |
+------------ | -------------
+`highlight_color` | The main highlight/theme color of the site. You can put any color as a hex color. The configured color will be applied to sidebar, anchor links, buttons etc.
+`show_share_buttons` | Set as True/False to enable or disable Post share option.
+`show_author_info` | Set as True/False to enable or disable the author information on a post.
+`disqus_shortname` | Disqus Short name for Disqus comments. Leave empty to disable comments.
+`google_analytics_key` | Enter your Google analytics tracking ID to enable analytic support.
+`google_webmaster_key` | Enter your Google web-master verification key to verify your site with the web-master tool. (This is an alternative way of verifying your site with the web-master tool, the general way is to upload a file to your server.)
+
+
+### Page level configurations
+
+These configurations can be found within the top section of the each page, see the a post under `_posts` directory for example. 
+
+| Property name | Description  |
+------------ | -------------
+`banner_image` | Specify the image name eg: `sample-banner-image-1.jpg` for banner image for the post. Jekyll system tries to locate the image under `assets/images`. So make sure you place all banner images under assets/images.
+`banner_video` | If you want to embed `Youtube/Vimeo` Video or `SoundCloud` audio, Specify the resource within single quotes. Please have a look on example post in `_posts/2014-12-14-what-is-nodejs.md` to see how we embed YouTube video. 
+`comments` | Set as True/False, if false will disable comments for current page/post.
+`browser_title` | SEO property.  Use this property if you want to display different browser title other than default page title. Please have a look on example post under `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+`meta_description` | SEO property. Use this property If you want to have unique meta description for each post. See the example post on `_posts/2014-12-14-what-is-nodejs.md` to see how we used the property.
+
+### Sidebar navigation configurations
+
+As jekyll supports data files, **Gaya** theme uses `YAML` [data file][df] to load sidebar navigation items. You could find the `main-nav.yaml` data file under `_data/` directory. You could add any number of menu items by modifying `main-nav.yaml`. 
+
+An example of `main-nav.yaml`:
+
+```
+- title: "About me" # Title/Caption of the menu item
+  href: "/about" # the page where it pointed
+- title: "Blog Archive"
+  href: "/archive"
 ```
 
----
+At some point you want to link an external URL, in that case you could edit the `_includes/sidebar.html` file. See the following example:
 
-## Post Front Matter YAML
-
-HMFAYSAL OMEGA uses variable post templates for articles, quotation, video, photo and status updates. 
-
-A new blog post should have the following structure to utilise the themes functions
-
-``` yaml
----
-layout: post
-title: "Some Title"					# Title of the post
-description: Some description		# Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline				# Will appear in bold letters on top of the post
-modified: YYYY-MM-DD				# Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
 ```
-
-A new status should have the following structure to utilise the themes functions
-
-``` yaml
----
-layout: post
-type: status                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
+<nav class="sidebar-nav">
+   <a class="sidebar-nav-item" 
+      href="http://www.example.com"
+      target="_blank">
+      Example site
+    </a>
+</nav>
 ```
-
-A new quotation post should have the following structure to utilise the themes functions
-
-``` yaml
----
-layout: post
-type:  quote                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
-```
-
-A new video post should have the following structure to utilise the themes functions
-
-``` yaml
----
-layout: post
-type:  video                # ! Important
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image.jpg
-comments: true
-mathjax:
----
-```
-
-A new photo post should have the following structure to utilise the themes functions. By default, the featured image is shown on the blog index, but if you want to display another photo, you can choose to do so :)
-
-``` yaml
----
-layout: post
-type:  photo                # ! Important
-photo: some-image.jpg 		# In case you do not want the featured image to display on the front page
-title: "Some Title"         # Title of the post
-description: Some description   # Description of the post, used for Facebook Opengraph & Twitter
-headline: Some headline       # Will appear in bold letters on top of the post
-modified: YYYY-MM-DD        # Date
-category: personal
-tags: []
-image: 
-  feature: some-image2.jpg
-comments: true
-mathjax:
----
-```
-
----
-
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@hmfaysal](http://twitter.com/hmfaysal) or [file a GitHub Issue](https://github.com/hmfaysal/hmfaysal-omega-theme/issues/new).
-
----
-
-## Requests?
-
-If you have some specific requests for this theme, or if you need help custom coding some elements, message me on Twitter [@hmfaysal](http://twitter.com/hmfaysal) or email me at [hmfaysal@alum.mit.edu](mailto:hmfaysal@alum.mit.edu)
-
----
 
 ## License
 
-This theme is free and open source software, distributed under the [The MIT License](LICENSE). So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+(The MIT License)
 
-If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
+Copyright (c) 2014 Gayan Virajith
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Warm Regards and Stay Creative,  
-Hossain Mohd. Faysal
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[jekyll]: http://jekyllrb.com
+[df]: http://jekyllrb.com/docs/datafiles/
